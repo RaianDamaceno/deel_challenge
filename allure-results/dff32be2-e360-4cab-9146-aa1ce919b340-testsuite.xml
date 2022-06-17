@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655407546185' stop='1655407549037'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1655407546186' status='broken' stop='1655407549036'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Edge-102.0.1245.41'/>
+            </parameters>
+            <steps>
+                <step start='1655407546195' status='passed' stop='1655407548441'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='30aec45d-4c62-4029-a587-e0171364f64d-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655407548459' status='passed' stop='1655407549033'>
+                    <name>takeScreenshot</name>
+                    <title>takeScreenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='367edabe-8c3b-4bef-92d3-c94be7f7b117-attachment.png' type='image/png' size='9036'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>browser.localStorage is not a function</message>
+                <stack-trace>TypeError: browser.localStorage is not a function
+                    at Context.&lt;anonymous> (C:\Users\Raian\Downloads\deel_challenge\test\specs\/challenge.e2e.js:7:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

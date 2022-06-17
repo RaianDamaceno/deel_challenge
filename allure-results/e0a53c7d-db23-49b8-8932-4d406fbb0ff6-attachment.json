@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@class='deel-ui__select deel-ui__select__compact css-2b097c-container']//div[@class='deel-ui__select__single-value css-1uccc91-singleValue']"
+}

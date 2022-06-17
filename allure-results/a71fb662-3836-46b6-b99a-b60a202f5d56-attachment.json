@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@class='box clearfix']//div[4]//input[1]"
+}
