@@ -92,6 +92,18 @@ class ContractPage extends Page {
         return $('h4=USE DEEL CONTRACT')
     }
 
+    get infoWaitClient() {
+        return $(".contract-layout-status")
+    }
+
+    get btnHome() {
+        return $("//a[.='Home']")
+    }
+
+    get checkContractTitleName() {
+        return $('h4=teste01')
+    }
+
     async chooseContract() {
         await this.btnMenuCreateContract.click()
         await this.fixedRateOption.click()
@@ -154,6 +166,15 @@ class ContractPage extends Page {
         await this.complianceContract.click()
 
         await this.btnCreateContract.click()
+        await browser.pause(10000)
+    }
+
+    async checkContractCreateSucessfull() {
+        await expect(this.infoWaitClient).toBeDisplayed()
+        
+        await this.btnHome.click()
+        
+        await expect(this.checkContractTitleName).toBeDisplayed()
     }
 }   
 
