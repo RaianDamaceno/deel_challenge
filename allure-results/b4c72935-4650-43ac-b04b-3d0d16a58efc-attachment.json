@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//div[@class='box clearfix']/div[@class='deel-ui__stack deel-ui__stack_vertical deel-ui__stack_with-spacing']/div[2]//input[1]"
-}

@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//div[5]//input[1]"
-}
