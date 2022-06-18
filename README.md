@@ -1,7 +1,7 @@
 
 # Deel Challenge
 
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
+Write a test to create a "Fixed Rate" contract using the best practices.
 
 
 ## Used Stack
@@ -21,13 +21,13 @@ Uma breve descrição sobre o que esse projeto faz e para quem ele é
 
 ## TO:DO
 
-Write a test to create a "Fixed Rate" contract using the best practices.
 
 - [ ] Remove Hardcoded data.
 - [ ] Add Reports.
 - [ ] Remove Pauses.
 - [ ] Skip google validator.
 - [ ] Abstraction of the page objects can be improved.
+- [ ] 
 ## Running the tests
 
 To run the tests, run the following command
