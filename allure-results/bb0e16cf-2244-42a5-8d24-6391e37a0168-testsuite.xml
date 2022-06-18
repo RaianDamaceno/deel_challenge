@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655521775470' stop='1655521777299'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1655521775471' status='failed' stop='1655521777296'>
+            <name>"before each" hook for My Login application</name>
+            <title>"before each" hook for My Login application</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Edge-102.0.1245.41'/>
+                <parameter kind='argument' name='browser' value='Edge-102.0.1245.41'/>
+            </parameters>
+            <steps>
+                <step start='1655521775479' status='passed' stop='1655521777290'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='dc5b198d-b825-4b63-b019-00c0d9af1087-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>setWindowSize expects width and height of type number</message>
+                <stack-trace>Error: setWindowSize expects width and height of type number
+                    at Browser.setWindowSize (C:\Users\Raian\Downloads\deel_challenge\node_modules\webdriverio\build\commands\browser\setWindowSize.js:29:15)
+                    at Browser.wrapCommandFn (C:\Users\Raian\Downloads\deel_challenge\node_modules\@wdio\utils\build\shim.js:137:38)
+                    at Context.&lt;anonymous> (C:\Users\Raian\Downloads\deel_challenge\test\specs\/challenge.e2e.js:7:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

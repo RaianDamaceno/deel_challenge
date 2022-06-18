@@ -4,7 +4,7 @@ import ContractPage from  '../pageobjects/contract.page';
 describe('My Login application', () => {
     beforeEach(async () => {
         await LoginPage.open();
-        await browser.setWindowSize(1900, 780);
+        await browser.setWindowRect( 0, 0, 1200, 800 );
         await LoginPage.login('yoleki2062@syswift.com', 'Teste@12345');
     });
 
@@ -15,6 +15,7 @@ describe('My Login application', () => {
         await ContractPage.defineDetails();
         await ContractPage.benefitsAndExtras();
         await ContractPage.contractCompliance();
+        await ContractPage.checkContractCreateSucessfull();
     });
 });
 

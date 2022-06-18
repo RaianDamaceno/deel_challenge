@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655519814210' stop='1655519817780'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1655519814210' status='broken' stop='1655519817775'>
+            <name>"before each" hook for My Login application</name>
+            <title>"before each" hook for My Login application</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-102.0.5005.115'/>
+                <parameter kind='argument' name='browser' value='Chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655519814224' status='passed' stop='1655519814244'>
+                    <name>setWindowRect</name>
+                    <title>setWindowRect</title>
+                    <attachments>
+                        <attachment title='Request' source='869147f2-924d-4091-a178-3bbe6843251b-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='f2ceb102-6f8d-4b3a-8dcf-61eaeb8decee-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655519814257' status='passed' stop='1655519817771'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='7f09432e-08f6-4a48-aedd-4919632386d9-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Command "maximizeWindow" is not yet implemented</message>
+                <stack-trace>Error: Command "maximizeWindow" is not yet implemented
+                    at Browser.retries (C:\Users\Raian\Downloads\deel_challenge\node_modules\devtools\build\devtoolsdriver.js:90:34)
+                    at Browser.wrapCommandFn (C:\Users\Raian\Downloads\deel_challenge\node_modules\@wdio\utils\build\shim.js:137:38)
+                    at Context.&lt;anonymous> (C:\Users\Raian\Downloads\deel_challenge\test\specs\/challenge.e2e.js:8:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

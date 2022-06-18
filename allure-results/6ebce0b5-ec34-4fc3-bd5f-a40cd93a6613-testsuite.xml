@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655520050639' stop='1655520053774'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1655520050641' status='broken' stop='1655520053771'>
+            <name>"before each" hook for My Login application</name>
+            <title>"before each" hook for My Login application</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-102.0.5005.115'/>
+                <parameter kind='argument' name='browser' value='Chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655520050650' status='passed' stop='1655520053760'>
+                    <name>navigateTo</name>
+                    <title>navigateTo</title>
+                    <attachments>
+                        <attachment title='Request' source='3f2e83b7-a1d5-4986-99d8-521ff470f615-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Wrong parameters applied for setWindowRect
+                Usage: setWindowRect(x, y, width, height)
+                
+                Property Description:
+                  "x" ((number|null)): the screenX attribute of the window object
+                  "y" ((number|null)): the screenY attribute of the window object
+                  "width" ((number|null)): the width of the outer dimensions of the top-level browsing context, including browser chrome etc...
+                  "height" ((number|null)): the height of the outer dimensions of the top-level browsing context, including browser chrome etc...
+                
+                For more info see https://w3c.github.io/webdriver/#dfn-set-window-rect
+                </message>
+                <stack-trace>Error: Wrong parameters applied for setWindowRect
+                Usage: setWindowRect(x, y, width, height)
+                
+                Property Description:
+                  "x" ((number|null)): the screenX attribute of the window object
+                  "y" ((number|null)): the screenY attribute of the window object
+                  "width" ((number|null)): the width of the outer dimensions of the top-level browsing context, including browser chrome etc...
+                  "height" ((number|null)): the height of the outer dimensions of the top-level browsing context, including browser chrome etc...
+                
+                For more info see https://w3c.github.io/webdriver/#dfn-set-window-rect
+                
+                    at validate (C:\Users\Raian\Downloads\deel_challenge\node_modules\devtools\build\utils.js:35:15)
+                    at Browser.wrappedCommand (C:\Users\Raian\Downloads\deel_challenge\node_modules\devtools\build\devtoolsdriver.js:98:49)
+                    at Browser.wrapCommandFn (C:\Users\Raian\Downloads\deel_challenge\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Context.&lt;anonymous> (C:\Users\Raian\Downloads\deel_challenge\test\specs\/challenge.e2e.js:8:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -136,10 +136,12 @@ class ContractPage extends Page {
         await this.inputPaymentRate.setValue('100')
         await this.inputPaymentFrequency.setValue('Weekly')
         await browser.keys("Enter");
-        await browser.pause(2000)
+
+        await expect(this.inputInvoiceCycleEnds).toBeDisplayed()
         await this.inputInvoiceCycleEnds.setValue('Sunday')
         await browser.keys("Enter");
-        await browser.pause(2000)
+        
+        await expect(this.inputPaymentDue).toBeDisplayed()
         await this.inputPaymentDue.setValue('Same Day')
         await browser.keys("Enter");
 
@@ -166,7 +168,6 @@ class ContractPage extends Page {
         await this.complianceContract.click()
 
         await this.btnCreateContract.click()
-        await browser.pause(10000)
     }
 
     async checkContractCreateSucessfull() {

@@ -196,8 +196,8 @@ exports.config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {Object}         browser      instance of created browser/device session
      */
-    before: async function () {
-        await localStorage.setItem("token", 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdGFnZSI6ImRldiIsInByb2ZpbGUiOjUxNTAwNywidGVhbSI6bnVsbCwib3JnYW5pemF0aW9uSWQiOm51bGwsInRpbWVzdGFtcCI6MTY1NTQ4MTg5ODg3MCwiaWQiOjQ4Nzk1OCwiZXhwIjoxNjU4MDczODk4fQ.RTm31mv6W2FciqvvP8SIPIB2xgvE1UZOld9onC-kHl4');
+    before: function () {
+        localStorage.setItem("token", 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdGFnZSI6ImRldiIsInByb2ZpbGUiOjUxNTAwNywidGVhbSI6bnVsbCwib3JnYW5pemF0aW9uSWQiOm51bGwsInRpbWVzdGFtcCI6MTY1NTQ3OTEyNzI1NiwiaWQiOjQ4Nzk1OCwiZXhwIjoxNjU4MDcxMTI3fQ.j891WWM_-SNK_gv80cLxt0yh5F-YDozCyEkFgWgGin8');
     },
     /**
      * Runs before a WebdriverIO command gets executed.
@@ -216,7 +216,6 @@ exports.config = {
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
     // beforeTest: function (test, context) {
-    //     localStorage.setItem("token", 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdGFnZSI6ImRldiIsInByb2ZpbGUiOjUxNTAwNywidGVhbSI6bnVsbCwib3JnYW5pemF0aW9uSWQiOm51bGwsInRpbWVzdGFtcCI6MTY1NTQ4MTg5ODg3MCwiaWQiOjQ4Nzk1OCwiZXhwIjoxNjU4MDczODk4fQ.RTm31mv6W2FciqvvP8SIPIB2xgvE1UZOld9onC-kHl4');
     // },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
