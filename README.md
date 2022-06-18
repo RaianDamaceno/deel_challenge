@@ -27,7 +27,7 @@ Write a test to create a "Fixed Rate" contract using the best practices.
 - [ ] Remove Pauses.
 - [ ] Skip google validator.
 - [ ] Abstraction of the page objects can be improved.
-- [ ] 
+
 ## Running the tests
 
 To run the tests, run the following command
