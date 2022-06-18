@@ -8,7 +8,7 @@ describe('My Login application', () => {
         await LoginPage.login('yoleki2062@syswift.com', 'Teste@12345');
     });
 
-    it('should login with valid credentials', async () => {
+    it('Create Fixed Rate contract with success', async () => {
         await ContractPage.chooseContract();
         await ContractPage.contractGeneralInfo();
         await ContractPage.contractPaymentDetails();
