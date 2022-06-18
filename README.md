@@ -22,15 +22,19 @@ Write a test to create a "Fixed Rate" contract using the best practices.
 ## TO:DO
 
 
-- [ ] Remove Hardcoded data.
+- [x] Remove Hardcoded data.
 - [ ] Add Reports.
-- [ ] Remove Pauses.
+- [x] Remove Pauses.
 - [ ] Skip google validator.
 - [ ] Abstraction of the page objects can be improved.
 
 ## Running the tests
 
 To run the tests, run the following command
+
+```bash
+  npm i
+```
 
 ```bash
   npm run wdio

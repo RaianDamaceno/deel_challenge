@@ -197,7 +197,7 @@ exports.config = {
      * @param {Object}         browser      instance of created browser/device session
      */
     before: function () {
-        localStorage.setItem("token", 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdGFnZSI6ImRldiIsInByb2ZpbGUiOjUxNTAwNywidGVhbSI6bnVsbCwib3JnYW5pemF0aW9uSWQiOm51bGwsInRpbWVzdGFtcCI6MTY1NTQ3OTEyNzI1NiwiaWQiOjQ4Nzk1OCwiZXhwIjoxNjU4MDcxMTI3fQ.j891WWM_-SNK_gv80cLxt0yh5F-YDozCyEkFgWgGin8');
+        browser.setLocalStorage('token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdGFnZSI6ImRldiIsInByb2ZpbGUiOjUxNTAwNywidGVhbSI6bnVsbCwib3JnYW5pemF0aW9uSWQiOm51bGwsInRpbWVzdGFtcCI6MTY1NTUxODQ4MjY5NSwiaWQiOjQ4Nzk1OCwiZXhwIjoxNjU4MTEwNDgyfQ.cQ7kdVZfSe_HGctfZlejzOLjnhgrXiw0nq79kN-N87Q')
     },
     /**
      * Runs before a WebdriverIO command gets executed.

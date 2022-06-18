@@ -109,17 +109,17 @@ class ContractPage extends Page {
         await this.fixedRateOption.click()
     }
 
-    async contractGeneralInfo() {
-        await this.inputContractName.setValue('teste01')
-        await this.inputContractorTaxResidence.setValue('United States')
+    async contractGeneralInfo(contractName, taxResidence, state, jobTitle, seniority, scope) {
+        await this.inputContractName.setValue(contractName)
+        await this.inputContractorTaxResidence.setValue(taxResidence)
         await browser.keys("Enter"); 
-        await this.inputChooseState.setValue('Colorado')
+        await this.inputChooseState.setValue(state)
         await browser.keys("Enter"); 
-        await this.inputJobTitle.setValue('Software QA Engineer')
+        await this.inputJobTitle.setValue(jobTitle)
         await browser.keys("Enter"); 
-        await this.inputSeniorityLevel.setValue("Senior (Individual Contributor Level 3)")
+        await this.inputSeniorityLevel.setValue(seniority)
         await browser.keys("Enter");
-        await this.inputScope.setValue("teste")
+        await this.inputScope.setValue(scope)
         await this.inputContractorStartDate.click()
 
         await browser.pause(2000)
@@ -128,21 +128,21 @@ class ContractPage extends Page {
         await this.btnNext.click()
     }   
     
-    async contractPaymentDetails() {
+    async contractPaymentDetails(currency, paymentRate, frequency, cycleEnds, paymentDue) {
         await expect(this.inputCurrency).toBeDisplayed()
 
-        await this.inputCurrency.setValue("GBP - British Pound")
+        await this.inputCurrency.setValue(currency)
         await browser.keys("Enter");
-        await this.inputPaymentRate.setValue('100')
-        await this.inputPaymentFrequency.setValue('Weekly')
+        await this.inputPaymentRate.setValue(paymentRate)
+        await this.inputPaymentFrequency.setValue(frequency)
         await browser.keys("Enter");
 
         await expect(this.inputInvoiceCycleEnds).toBeDisplayed()
-        await this.inputInvoiceCycleEnds.setValue('Sunday')
+        await this.inputInvoiceCycleEnds.setValue(cycleEnds)
         await browser.keys("Enter");
         
         await expect(this.inputPaymentDue).toBeDisplayed()
-        await this.inputPaymentDue.setValue('Same Day')
+        await this.inputPaymentDue.setValue(paymentDue)
         await browser.keys("Enter");
 
         await this.btnNext.click()

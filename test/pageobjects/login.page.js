@@ -41,7 +41,6 @@ class LoginPage extends Page {
      */
     open () {
         return super.open('login');
-        // browser.windowHandleSize({width:1280,height:800});
     }
 }
 
